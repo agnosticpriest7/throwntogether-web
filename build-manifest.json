@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "bfca16283b53d29282e3a5f7b0c4076eda4d534b",
+  "totalBytes": 63963623,
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build-info.json",
+      "bytes": 156,
+      "sha256": "98fc9a09ea1d5af98d1479e457f9b6442230ffa7642bf858c7ecae5c584b05b7"
+    },
+    {
+      "path": "Build/6ffbdedda74a8dc1536ea06ee8b0d581.wasm",
+      "bytes": 35878026,
+      "sha256": "f546b4d6b3daf31392ffb41a748c7a1a17e69f8e4f09ac1fd52ebf72521fdbe7"
+    },
+    {
+      "path": "Build/8375d8ab45c53ef61bd330ef6aa4c40a.loader.js",
+      "bytes": 20263,
+      "sha256": "5873719904171abe42c538274a486be3e2db108ce3690776fc6b1d1fc4146b34"
+    },
+    {
+      "path": "Build/bdb322f11e6a37f5b33e5419904f3b38.data",
+      "bytes": 19527759,
+      "sha256": "9e2dc8c868409ec3a34dfd1980849227fa9d689ff5f09efd5e0db70b27c1c640"
+    },
+    {
+      "path": "Build/ca7b1661e492f4541f1062019976c7b8.framework.js",
+      "bytes": 334638,
+      "sha256": "889fac5c07a64af9998874abb2b43010b50a8d47af2e2343a9f5f7904bb384e1"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3226,
+      "sha256": "04572c0855c4e9124774116b5b9a7c1f5602e4578afdc97c2ce3a0afade79484"
+    },
+    {
+      "path": "StreamingAssets/Music/first-service.ogg",
+      "bytes": 3733389,
+      "sha256": "7c5e10017adca617d8e1f4e832d90d66ce49bad4f4d62660c6fec9d7495484e5"
+    },
+    {
+      "path": "StreamingAssets/Music/one-more-order.ogg",
+      "bytes": 4464167,
+      "sha256": "21f291bf933a1e393a02adf3aca3e8e8d651c3afce4d05b77b58796d04121efb"
+    },
+    {
+      "path": "web-shell.js",
+      "bytes": 1999,
+      "sha256": "6d822d438ab3916efcbf660f46a9da834eba31302e2df557f9b406a5f0f932aa"
+    }
+  ]
+}

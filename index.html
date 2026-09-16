@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thrown Together — Web development test</title>
+  <style>
+    html,body { margin:0; width:100%; height:100%; overflow:hidden; background:#000000; color:#eee; font:14px system-ui,sans-serif; }
+    #web-host { width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#000000; }
+    #game-frame { position:relative; flex:none; }
+    canvas { display:block; width:100%; height:100%; outline:none; }
+    #loading { position:absolute; inset:0; display:grid; place-content:center; text-align:center; background:#000000; padding:24px; }
+    #web-tools { position:absolute; bottom:0; z-index:2; min-height:32px; flex-wrap:wrap; width:100%; box-sizing:border-box; display:flex; align-items:center; justify-content:center; gap:12px; padding:2px 8px; background:#000c; }
+    #focus-hint { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  </style>
+</head>
+<body>
+  <main id="web-host">
+    <div id="game-frame">
+      <canvas id="unity-canvas" width="960" height="600" tabindex="0" aria-label="Thrown Together game"></canvas>
+      <div id="loading" role="status">Loading Unity…</div>
+    </div>
+    <div id="web-tools">
+      <span id="focus-hint" role="status">Click game to focus</span>
+      <span id="xbox-hint">Xbox Edge: hold Menu (≡) → Use game controls</span>
+
+    </div>
+  </main>
+  <script src="web-shell.js?build=bdb322f11e6a37f5b33e5419904f3b38.data"></script>
+  <script>
+    const canvas=document.getElementById("unity-canvas");
+    const loading=document.getElementById("loading");
+    const shell=ThrownTogetherWeb.attach(window,document);
+    const config={
+      dataUrl:"Build/bdb322f11e6a37f5b33e5419904f3b38.data",
+      frameworkUrl:"Build/ca7b1661e492f4541f1062019976c7b8.framework.js",
+      codeUrl:"Build/6ffbdedda74a8dc1536ea06ee8b0d581.wasm",
+      streamingAssetsUrl:"StreamingAssets",
+      companyName:"DefaultCompany",
+      productName:"ThrownTogetherUnity",
+      productVersion:"0.1.0",
+      // Preserve Edge's native Menu/right-click controller-mode menu on the canvas.
+      disabledCanvasEvents:['dragstart'],
+      matchWebGLToCanvasSize:true,
+      autoSyncPersistentDataPath:true,
+      showBanner:(message,type)=>{ if(type==="error") { loading.style.display="grid"; loading.textContent=message; } else console.warn(message); }
+    };
+    const loader=document.createElement("script");
+    loader.src="Build/8375d8ab45c53ef61bd330ef6aa4c40a.loader.js";
+    loader.onerror=()=>{ loading.textContent="Unity loader could not download. Refresh this page to retry."; };
+    loader.onload=()=>createUnityInstance(canvas,config,p=>{loading.textContent="Loading Unity… "+Math.round(p*100)+"%";})
+      .then(()=>{ canvas.dataset.loaderReadyMs=Math.round(performance.now()); loading.style.display="none"; shell.ready(); })
+      .catch(error=>{ loading.style.display="grid"; loading.textContent="Build failed to load: "+error; console.error(error); });
+    document.body.appendChild(loader);
+  </script>
+</body>
+</html>

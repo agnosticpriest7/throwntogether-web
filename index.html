@@ -26,19 +26,19 @@
 
     </div>
   </main>
-  <script src="web-shell.js?build=714886952ae9fa2810c0b5d016253bfc.data"></script>
+  <script src="web-shell.js?build=600ed60dd96373d543b5efd2410b36da.data"></script>
   <script>
     const canvas=document.getElementById("unity-canvas");
     const loading=document.getElementById("loading");
     const shell=ThrownTogetherWeb.attach(window,document);
     const config={
-      dataUrl:"Build/714886952ae9fa2810c0b5d016253bfc.data",
+      dataUrl:"Build/600ed60dd96373d543b5efd2410b36da.data",
       frameworkUrl:"Build/ca7b1661e492f4541f1062019976c7b8.framework.js",
-      codeUrl:"Build/7e6444313a62a9d525db40b57da6d105.wasm",
+      codeUrl:"Build/850ae287946db461ddc347d176f5d245.wasm",
       streamingAssetsUrl:"StreamingAssets",
       companyName:"DefaultCompany",
       productName:"ThrownTogetherUnity",
-      productVersion:"0.1.0",
+      productVersion:"0.31.0-dev",
       // Preserve Edge's native Menu/right-click controller-mode menu on the canvas.
       disabledCanvasEvents:['dragstart'],
       matchWebGLToCanvasSize:true,
@@ -46,7 +46,7 @@
       showBanner:(message,type)=>{ if(type==="error") { loading.style.display="grid"; loading.textContent=message; } else console.warn(message); }
     };
     const loader=document.createElement("script");
-    loader.src="Build/2e55e30f84ee625957d264b34581f937.loader.js";
+    loader.src="Build/bffd3ee76bf41c224a31040b9040cce2.loader.js";
     loader.onerror=()=>{ loading.textContent="Unity loader could not download. Refresh this page to retry."; };
     loader.onload=()=>createUnityInstance(canvas,config,p=>{loading.textContent="Loading Unity… "+Math.round(p*100)+"%";})
       .then(()=>{ canvas.dataset.loaderReadyMs=Math.round(performance.now()); loading.style.display="none"; shell.ready(); })

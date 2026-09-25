@@ -26,32 +26,50 @@
 
     </div>
   </main>
-  <script src="web-shell.js?build=44c612de69b3d54d2b4d329d6d535433.data"></script>
   <script>
     const canvas=document.getElementById("unity-canvas");
     const loading=document.getElementById("loading");
-    const shell=ThrownTogetherWeb.attach(window,document);
-    const config={
-      dataUrl:"Build/44c612de69b3d54d2b4d329d6d535433.data",
-      frameworkUrl:"Build/ca7b1661e492f4541f1062019976c7b8.framework.js",
-      codeUrl:"Build/41fbe7fe14f90dd108774b7264a58d9b.wasm",
-      streamingAssetsUrl:"StreamingAssets",
-      companyName:"DefaultCompany",
-      productName:"ThrownTogetherUnity",
-      productVersion:"0.32.1-dev",
-      // Preserve Edge's native Menu/right-click controller-mode menu on the canvas.
-      disabledCanvasEvents:['dragstart'],
-      matchWebGLToCanvasSize:true,
-      autoSyncPersistentDataPath:true,
-      showBanner:(message,type)=>{ if(type==="error") { loading.style.display="grid"; loading.textContent=message; } else console.warn(message); }
-    };
-    const loader=document.createElement("script");
-    loader.src="Build/93ba6eca77a61694e8f7901cf3ca319a.loader.js";
-    loader.onerror=()=>{ loading.textContent="Unity loader could not download. Refresh this page to retry."; };
-    loader.onload=()=>createUnityInstance(canvas,config,p=>{loading.textContent="Loading Unity… "+Math.round(p*100)+"%";})
-      .then(()=>{ canvas.dataset.loaderReadyMs=Math.round(performance.now()); loading.style.display="none"; shell.ready(); })
-      .catch(error=>{ loading.style.display="grid"; loading.textContent="Build failed to load: "+error; console.error(error); });
-    document.body.appendChild(loader);
+    async function boot() {
+      // The release workflow writes build-info.json after compiling. Its
+      // source identity keeps fixed WebGL filenames fresh across deployments.
+      let identity;
+      try {
+        const response=await fetch("build-info.json",{cache:"no-store"});
+        if(!response.ok) throw new Error("Build identity unavailable");
+        const info=await response.json();
+        identity=/^[0-9a-f]{40}$/.test(info.sourceCommit)?info.sourceCommit:null;
+      } catch(error) { console.warn("Using a fresh local build cache key",error); }
+      const version="?v="+encodeURIComponent(identity||Date.now().toString());
+      const helper=document.createElement("script");
+      helper.src="web-shell.js"+version;
+      helper.onerror=()=>{ loading.textContent="Web controls could not download. Refresh this page to retry."; };
+      helper.onload=()=>{
+        const shell=ThrownTogetherWeb.attach(window,document);
+        const config={
+          dataUrl:"Build/Web.data"+version,
+          frameworkUrl:"Build/Web.framework.js"+version,
+          codeUrl:"Build/Web.wasm"+version,
+          streamingAssetsUrl:"StreamingAssets",
+          companyName:"DefaultCompany",
+          productName:"ThrownTogetherUnity",
+          productVersion:"0.32.1-dev",
+          // Preserve Edge's native Menu/right-click controller-mode menu on the canvas.
+          disabledCanvasEvents:['dragstart'],
+          matchWebGLToCanvasSize:true,
+          autoSyncPersistentDataPath:true,
+          showBanner:(message,type)=>{ if(type==="error") { loading.style.display="grid"; loading.textContent=message; } else console.warn(message); }
+        };
+        const loader=document.createElement("script");
+        loader.src="Build/Web.loader.js"+version;
+        loader.onerror=()=>{ loading.textContent="Unity loader could not download. Refresh this page to retry."; };
+        loader.onload=()=>createUnityInstance(canvas,config,p=>{loading.textContent="Loading Unity… "+Math.round(p*100)+"%";})
+          .then(()=>{ canvas.dataset.loaderReadyMs=Math.round(performance.now()); loading.style.display="none"; shell.ready(); })
+          .catch(error=>{ loading.style.display="grid"; loading.textContent="Build failed to load: "+error; console.error(error); });
+        document.body.appendChild(loader);
+      };
+      document.body.appendChild(helper);
+    }
+    boot();
   </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "7cf1aa8b300a26b43ce71fb820e715a4fb6a742a",
-  "totalBytes": 77951530,
+  "sourceCommit": "d45c9dc9f3c6aca51028fdc204c568320e600134",
+  "totalBytes": 84133373,
   "files": [
     {
       "path": ".nojekyll",
@@ -11,32 +11,32 @@
     {
       "path": "build-info.json",
       "bytes": 156,
-      "sha256": "d4237e520237b1f60805743a027b7114afbfd9d41237afcc7330b7578474311f"
+      "sha256": "9fb70f1fe00ed9c52150ea7d4df87affe8e8120d9b6d286d495fdad100c49d35"
     },
     {
-      "path": "Build/41fbe7fe14f90dd108774b7264a58d9b.wasm",
-      "bytes": 36204494,
-      "sha256": "4f3fc508a30ee7fa6fc15ea7e5d853d820a40a9a371a9bfd37899d466048d85a"
+      "path": "Build/Web.data",
+      "bytes": 37443176,
+      "sha256": "96f81ea698aab241455ed6aabfd1ebcc07c313b7d91d763b1819571ebcbcb590"
     },
     {
-      "path": "Build/44c612de69b3d54d2b4d329d6d535433.data",
-      "bytes": 33189193,
-      "sha256": "0bb0a5f145ad531b6f746c31bdd79ae497367546163f68c39f5ae59d75e1dcb4"
-    },
-    {
-      "path": "Build/93ba6eca77a61694e8f7901cf3ca319a.loader.js",
-      "bytes": 20263,
-      "sha256": "8a1a1d4eb0f5d033a2d4b3da113bdd79da7173ef13d82a4d26ed6f8a859e7822"
-    },
-    {
-      "path": "Build/ca7b1661e492f4541f1062019976c7b8.framework.js",
+      "path": "Build/Web.framework.js",
       "bytes": 334638,
       "sha256": "889fac5c07a64af9998874abb2b43010b50a8d47af2e2343a9f5f7904bb384e1"
     },
     {
+      "path": "Build/Web.loader.js",
+      "bytes": 20263,
+      "sha256": "3dabe72afa0148ad25a8a22d76c190d5788d7d3a6be9be70fbcd0f169c5f77f0"
+    },
+    {
+      "path": "Build/Web.wasm",
+      "bytes": 38131467,
+      "sha256": "1d0497416e7e3c51e4946fbe3b61f5f5a5a9abd08c25bd721e1a596f13e34511"
+    },
+    {
       "path": "index.html",
-      "bytes": 3231,
-      "sha256": "3d6bef00ef931f8c5114c1d6b7ea70309a035d0152c9b2b58af3a8d4386e4c7c"
+      "bytes": 4118,
+      "sha256": "e245ed9c94f549be20851f0bdb49e01a8d7bab8f00bdc52995424b56318499d5"
     },
     {
       "path": "StreamingAssets/Music/first-service.ogg",

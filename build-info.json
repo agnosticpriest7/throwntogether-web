@@ -1,5 +1,9 @@
 {
-  "builtAtUtc": "2026-10-02T20:01:50.5339523Z",
-  "developmentVersion": "0.41.2-dev",
-  "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82"
+  "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
+  "developmentVersion": "0.41.3-dev",
+  "buildIdentifier": "23200945-masterplan-338c2c31",
+  "uncommittedChanges": true,
+  "sourceInputManifestSha256": "ae7ac61270715af72f29d673974dec5c546d3abccf1cb10d30331e885ab01e15",
+  "testedGameplayManifestSha256": "338c2c31be69c9bd88d47462dbad9c99b50d349b3d335ec206597ad77d594b8c",
+  "builtAtUtc": "2026-10-03T16:25:20.2681449Z"
 }

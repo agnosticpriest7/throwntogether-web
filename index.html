@@ -12,6 +12,10 @@
     #loading { position:absolute; inset:0; display:grid; place-content:center; text-align:center; background:#000000; padding:24px; }
     #web-tools { position:absolute; bottom:0; z-index:2; min-height:32px; flex-wrap:wrap; width:100%; box-sizing:border-box; display:flex; align-items:center; justify-content:center; gap:12px; padding:2px 8px; background:#000c; }
     #focus-hint { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    #fatal-error { position:absolute; inset:0; z-index:4; display:none; place-content:center; gap:16px; background:#08121a; text-align:center; padding:24px; }
+    #fatal-error p,#fatal-error details { max-width:640px; margin:0 auto; }
+    #fatal-error button { padding:12px 24px; font:inherit; color:#fff; background:#176b85; border:2px solid #fff; border-radius:8px; }
+    #fatal-detail { overflow-wrap:anywhere; max-height:160px; overflow:auto; }
   </style>
 </head>
 <body>
@@ -19,6 +23,12 @@
     <div id="game-frame">
       <canvas id="unity-canvas" width="960" height="600" tabindex="0" aria-label="Thrown Together game"></canvas>
       <div id="loading" role="status">Loading Unity…</div>
+      <section id="fatal-error" role="alert" aria-labelledby="fatal-title">
+        <h1 id="fatal-title">Game failed to load</h1>
+        <p id="fatal-advice"></p>
+        <button type="button" id="retry-load">Reload and retry</button>
+        <details><summary>Error details</summary><p id="fatal-detail"></p></details>
+      </section>
     </div>
     <div id="web-tools">
       <span id="focus-hint" role="status">Click game to focus</span>
@@ -29,6 +39,17 @@
   <script>
     const canvas=document.getElementById("unity-canvas");
     const loading=document.getElementById("loading");
+    let failed=false,shell;
+    document.getElementById("retry-load").onclick=()=>location.reload();
+    function reportFatal(error,kind) {
+      failed=true;shell?.fail();loading.style.display="none";
+      document.getElementById("web-tools").style.display="none";
+      document.getElementById("focus-hint").textContent="";
+      document.getElementById("fatal-advice").textContent=window.ThrownTogetherWeb?.loadFailure(error,kind)||"The web controls could not download. Check your connection, then reload. Your saved Careers are kept.";
+      document.getElementById("fatal-detail").textContent=String(error);
+      document.getElementById("fatal-error").style.display="grid";
+      document.getElementById("retry-load").focus();console.error(error);
+    }
     async function boot() {
       // The release workflow writes build-info.json after compiling. Its
       // source identity keeps fixed WebGL filenames fresh across deployments.
@@ -38,13 +59,15 @@
         if(!response.ok) throw new Error("Build identity unavailable");
         const info=await response.json();
         identity=/^[0-9a-f]{40}$/.test(info.sourceCommit)?info.sourceCommit:null;
+        // Fresh builds can share a source base while including reviewed local work.
+        if(identity && typeof info.builtAtUtc === "string") identity+="-"+info.builtAtUtc;
       } catch(error) { console.warn("Using a fresh local build cache key",error); }
       const version="?v="+encodeURIComponent(identity||Date.now().toString());
       const helper=document.createElement("script");
       helper.src="web-shell.js"+version;
-      helper.onerror=()=>{ loading.textContent="Web controls could not download. Refresh this page to retry."; };
+      helper.onerror=()=>reportFatal("Web controls could not download","network");
       helper.onload=()=>{
-        const shell=ThrownTogetherWeb.attach(window,document);
+        shell=ThrownTogetherWeb.attach(window,document);
         const config={
           dataUrl:"Build/Web.data"+version,
           frameworkUrl:"Build/Web.framework.js"+version,
@@ -57,14 +80,17 @@
           disabledCanvasEvents:['dragstart'],
           matchWebGLToCanvasSize:true,
           autoSyncPersistentDataPath:true,
-          showBanner:(message,type)=>{ if(type==="error") { loading.style.display="grid"; loading.textContent=message; } else console.warn(message); }
+          showBanner:(message,type)=>{ if(type==="error")reportFatal(message);else console.warn(message); }
         };
         const loader=document.createElement("script");
         loader.src="Build/Web.loader.js"+version;
-        loader.onerror=()=>{ loading.textContent="Unity loader could not download. Refresh this page to retry."; };
-        loader.onload=()=>createUnityInstance(canvas,config,p=>{loading.textContent="Loading Unity… "+Math.round(p*100)+"%";})
-          .then(()=>{ canvas.dataset.loaderReadyMs=Math.round(performance.now()); loading.style.display="none"; shell.ready(); })
-          .catch(error=>{ loading.style.display="grid"; loading.textContent="Build failed to load: "+error; console.error(error); });
+        loader.onerror=()=>reportFatal("Unity loader could not download","network");
+        loader.onload=()=>{
+          try {createUnityInstance(canvas,config,p=>{if(!failed)loading.textContent="Loading Unity… "+Math.round(p*100)+"%";})
+            .then(()=>{if(failed)return;canvas.dataset.loaderReadyMs=Math.round(performance.now());loading.style.display="none";shell.ready();})
+            .catch(error=>reportFatal(error));}
+          catch(error){reportFatal(error);}
+        };
         document.body.appendChild(loader);
       };
       document.body.appendChild(helper);

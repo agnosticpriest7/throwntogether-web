@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "totalBytes": 128457011,
+  "totalBytes": 125990607,
   "files": [
     {
       "path": ".nojekyll",
@@ -10,13 +10,13 @@
     },
     {
       "path": "build-info.json",
-      "bytes": 156,
-      "sha256": "6756dcfdfa5a12314c231f9721e3f3ee5ea78c320ee0e1dfc91db786b8412fe9"
+      "bytes": 444,
+      "sha256": "d3d3b4a0649d896c40c678cb0b078f3c5f6ed14b348adbc9353e491b0af99fcb"
     },
     {
       "path": "Build/Web.data",
-      "bytes": 38499371,
-      "sha256": "1d01292f14bbd139d93d98a1d4538ef6d71d80c85523a775047d35cc4e3ee10f"
+      "bytes": 37674561,
+      "sha256": "3be2ff460252a18d80d08f112cf6a538faf000ba321c779723991c079877ebda"
     },
     {
       "path": "Build/Web.framework.js",
@@ -26,17 +26,17 @@
     {
       "path": "Build/Web.loader.js",
       "bytes": 20263,
-      "sha256": "5291b491088d953c3225ec11eb51ad5e6a95b003cd235baccf594f5b877cdd74"
+      "sha256": "f7f7978c84eed916b5e5c262ae55186c5eb95347bf60bf1aadc7c3e3d724c2ec"
     },
     {
       "path": "Build/Web.wasm",
-      "bytes": 38324914,
-      "sha256": "306e4b6e4f782c0edfeb14ecfb2c044b30bdf97f1c791b6e98daa1246fc25336"
+      "bytes": 36680512,
+      "sha256": "7138ba3e0f12a72bcd7fa64c32905f7d8fe7f85bf79a492141b068bdc40c64bd"
     },
     {
       "path": "index.html",
-      "bytes": 4118,
-      "sha256": "e245ed9c94f549be20851f0bdb49e01a8d7bab8f00bdc52995424b56318499d5"
+      "bytes": 5732,
+      "sha256": "3529eee5f63b33fd7ec254f86f414627201f8263af5dba86ef3ad4876ed5e84d"
     },
     {
       "path": "StreamingAssets/Music/after-the-rush.ogg",
@@ -145,8 +145,8 @@
     },
     {
       "path": "web-shell.js",
-      "bytes": 1999,
-      "sha256": "6d822d438ab3916efcbf660f46a9da834eba31302e2df557f9b406a5f0f932aa"
+      "bytes": 2905,
+      "sha256": "80d3dbd33fa49d3ce06028e1527316576a1f2758e1b8abbeca0f7f43f4d95a38"
     }
   ]
 }

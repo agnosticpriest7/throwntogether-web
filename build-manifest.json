@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "totalBytes": 125990607,
+  "totalBytes": 126044693,
   "files": [
     {
       "path": ".nojekyll",
@@ -10,33 +10,33 @@
     },
     {
       "path": "build-info.json",
-      "bytes": 444,
-      "sha256": "d3d3b4a0649d896c40c678cb0b078f3c5f6ed14b348adbc9353e491b0af99fcb"
+      "bytes": 388,
+      "sha256": "66758f495d3a1d94a3c5eb62e2c7eeb3347b2c3d50c85d91f1378b8472d74945"
     },
     {
-      "path": "Build/Web.data",
-      "bytes": 37674561,
-      "sha256": "3be2ff460252a18d80d08f112cf6a538faf000ba321c779723991c079877ebda"
+      "path": "Build/Web-build3-production.data",
+      "bytes": 37686473,
+      "sha256": "e8ffc10476642f315d476d9cb501e2b7656caee8faf167695dccdda3fc58784d"
     },
     {
-      "path": "Build/Web.framework.js",
+      "path": "Build/Web-build3-production.framework.js",
       "bytes": 336117,
       "sha256": "c8af70e704a7f69d4ddeacaa7ca62a9ff7589011abf244d79dc159891979d8c3"
     },
     {
-      "path": "Build/Web.loader.js",
+      "path": "Build/Web-build3-production.loader.js",
       "bytes": 20263,
-      "sha256": "f7f7978c84eed916b5e5c262ae55186c5eb95347bf60bf1aadc7c3e3d724c2ec"
+      "sha256": "d3ae2bb09b1f936750d19ee4ea8e9a9c0f25921cf43ea2170e1905b285809064"
     },
     {
-      "path": "Build/Web.wasm",
-      "bytes": 36680512,
-      "sha256": "7138ba3e0f12a72bcd7fa64c32905f7d8fe7f85bf79a492141b068bdc40c64bd"
+      "path": "Build/Web-build3-production.wasm",
+      "bytes": 36722670,
+      "sha256": "43c7161b2c872720a49fae0428b1a15511880fb580733b780cc6b45d77459747"
     },
     {
       "path": "index.html",
-      "bytes": 5732,
-      "sha256": "3529eee5f63b33fd7ec254f86f414627201f8263af5dba86ef3ad4876ed5e84d"
+      "bytes": 5804,
+      "sha256": "bf8bec7b3caa3c85aaf0441ef7988453874eadff3229c090a21750582931f993"
     },
     {
       "path": "StreamingAssets/Music/after-the-rush.ogg",

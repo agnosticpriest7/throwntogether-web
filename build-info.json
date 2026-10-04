@@ -1,9 +1,9 @@
 {
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "developmentVersion": "0.41.3-dev",
-  "buildIdentifier": "23200945-masterplan-338c2c31",
+  "developmentVersion": "0.41.4-dev",
+  "buildIdentifier": "23200945-local-build3",
   "uncommittedChanges": true,
-  "sourceInputManifestSha256": "ae7ac61270715af72f29d673974dec5c546d3abccf1cb10d30331e885ab01e15",
-  "testedGameplayManifestSha256": "338c2c31be69c9bd88d47462dbad9c99b50d349b3d335ec206597ad77d594b8c",
-  "builtAtUtc": "2026-10-03T16:25:20.2681449Z"
+  "sourceInputManifestSha256": "1d1a8c0e8410d4e8b2ba11673ccd597235e473007c22badc608bbfd12daf9940",
+  "builtAtUtc": "2026-10-04T03:44:47.8973927Z",
+  "purpose": "local Build 3 verification only; no deployment"
 }

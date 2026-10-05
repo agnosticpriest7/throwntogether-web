@@ -1,9 +1,9 @@
 {
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "developmentVersion": "0.41.4-dev",
-  "buildIdentifier": "23200945-local-build3",
+  "developmentVersion": "0.41.5-dev",
+  "buildIdentifier": "23200945-local-dining-fix",
   "uncommittedChanges": true,
-  "sourceInputManifestSha256": "1d1a8c0e8410d4e8b2ba11673ccd597235e473007c22badc608bbfd12daf9940",
-  "builtAtUtc": "2026-10-04T03:44:47.8973927Z",
-  "purpose": "local Build 3 verification only; no deployment"
+  "sourceInputManifestSha256": "eaf2da1d78ad104fd1a15d598287f4c6e628989248531115a4b3ac974699286e",
+  "builtAtUtc": "2026-10-05T02:26:07.8010603Z",
+  "purpose": "local dining-fix verification only; no deployment"
 }

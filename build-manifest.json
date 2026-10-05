@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "totalBytes": 126215419,
+  "totalBytes": 126264608,
   "files": [
     {
       "path": ".nojekyll",
@@ -10,33 +10,33 @@
     },
     {
       "path": "build-info.json",
-      "bytes": 395,
-      "sha256": "f1a0453ffd10f2e29417bc88d290e0f9c0dcf30fae67266445fb1a0601715c39"
+      "bytes": 408,
+      "sha256": "5549560ade56acb175b39d098c02b2bd4480bc85da443ea483c66e5b5e07c426"
     },
     {
-      "path": "Build/Web-dining-production.data",
-      "bytes": 37714686,
-      "sha256": "130cbc4b61f828b36ea25858b3cf80a389e94a62e7167e721b65440df0d44a44"
+      "path": "Build/Web-staff-production-final.data",
+      "bytes": 37719618,
+      "sha256": "229617ae1c542fc2f1878594a4b79031038d9d81f16d2dcb54ee2692362e590c"
     },
     {
-      "path": "Build/Web-dining-production.framework.js",
+      "path": "Build/Web-staff-production-final.framework.js",
       "bytes": 336117,
       "sha256": "c8af70e704a7f69d4ddeacaa7ca62a9ff7589011abf244d79dc159891979d8c3"
     },
     {
-      "path": "Build/Web-dining-production.loader.js",
+      "path": "Build/Web-staff-production-final.loader.js",
       "bytes": 20263,
-      "sha256": "1f97180bae4f77c23e43d86d6313ae06fda3ff4cd39e46df167689e0ae4dd7ff"
+      "sha256": "0ceb079369511f1719847c3acceb6e26deace4654c705a680f11032e4e4c1395"
     },
     {
-      "path": "Build/Web-dining-production.wasm",
-      "bytes": 36865176,
-      "sha256": "39b725786a791ce574487d8055219c065a3bc60c998d5a3b19cae34e3c649196"
+      "path": "Build/Web-staff-production-final.wasm",
+      "bytes": 36909400,
+      "sha256": "974124791fda4ba6fe214508291e2ae912c1362ded58a21d4d11b647efafe60d"
     },
     {
       "path": "index.html",
-      "bytes": 5804,
-      "sha256": "65928e577c5c10bc9484dbdf1964e14df2c94061d2888afc8536c3a28f01628b"
+      "bytes": 5824,
+      "sha256": "cc253c41df7a1667fdaf7b96dcbc36d0bad69cf2a66ddaabd1edfb5e94832c67"
     },
     {
       "path": "StreamingAssets/Music/after-the-rush.ogg",

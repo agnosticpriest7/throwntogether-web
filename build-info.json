@@ -1,9 +1,9 @@
 {
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "developmentVersion": "0.41.6-dev",
-  "buildIdentifier": "23200945-local-staff-expansion",
+  "developmentVersion": "0.41.7-dev",
+  "buildIdentifier": "23200945-local-cuisine",
   "uncommittedChanges": true,
-  "sourceInputManifestSha256": "358e45f323c9a01367474227c02dee6e261e230f9fd7b119fd1286a4e3c4cc58",
-  "builtAtUtc": "2026-10-05T08:17:32.0370966Z",
-  "purpose": "owner-authorized staffing and expansion release candidate"
+  "sourceInputManifestSha256": "e36d2dacca575d631e9f715a06f0b0edee669d031f7b7110979ebca47fbee614",
+  "builtAtUtc": "2026-10-06T02:40:41.9519558Z",
+  "purpose": "owner-authorized cuisine, interaction and physical staff recovery release candidate"
 }

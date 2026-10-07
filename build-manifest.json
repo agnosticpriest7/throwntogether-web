@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "totalBytes": 127717545,
+  "totalBytes": 127792452,
   "files": [
     {
       "path": ".nojekyll",
@@ -10,33 +10,33 @@
     },
     {
       "path": "build-info.json",
-      "bytes": 390,
-      "sha256": "071e04981ccab715dd318c87ed1e327a4aa5698a90b85c932223712e68bcdcb8"
+      "bytes": 402,
+      "sha256": "067455a3a15b0b8b3e4f3e139023c8064e7336842502a121122554b7f3f20ab4"
     },
     {
-      "path": "Build/Web-deploy-current-production.data",
-      "bytes": 39061876,
-      "sha256": "bf4178fa9895a9b4732a4f6abee4ecf450164dbbe6d43c87025359d1b4c9bb6b"
+      "path": "Build/Web-polish-production.data",
+      "bytes": 39072629,
+      "sha256": "ae33bd87dc171bc9c914b26b01bfa042a85567d459841b2d4e6b8d7fc6dc43df"
     },
     {
-      "path": "Build/Web-deploy-current-production.framework.js",
+      "path": "Build/Web-polish-production.framework.js",
       "bytes": 336117,
       "sha256": "c8af70e704a7f69d4ddeacaa7ca62a9ff7589011abf244d79dc159891979d8c3"
     },
     {
-      "path": "Build/Web-deploy-current-production.loader.js",
+      "path": "Build/Web-polish-production.loader.js",
       "bytes": 20263,
-      "sha256": "528428c85e61a376bca2654099c550b2955a1f21b807fc306ba52305424eb6f8"
+      "sha256": "07a62dcf3d4084af89126ab98db1aa97714090e48ce2351a9869010ad5da9885"
     },
     {
-      "path": "Build/Web-deploy-current-production.wasm",
-      "bytes": 37020085,
-      "sha256": "cbe8cd8f4dc284ae99b2f4f66c2b579e1606650a37099fde8fb28946ce19ab57"
+      "path": "Build/Web-polish-production.wasm",
+      "bytes": 37084259,
+      "sha256": "2399ee586ca8790e34e512c84bdb0b3d092135a18ef54f5a6e2b43bd844b3de1"
     },
     {
       "path": "index.html",
-      "bytes": 5836,
-      "sha256": "b90cb3e5a96346f0725721f3e1826376d7128f9f1c21f45fa0ca283e75e78365"
+      "bytes": 5804,
+      "sha256": "1c0db3abdf13a431c6e3f680a43e6ea7e32383918dd342dd1997b7360ab81d0e"
     },
     {
       "path": "StreamingAssets/Music/after-the-rush.ogg",

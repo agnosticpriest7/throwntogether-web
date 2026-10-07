@@ -1,9 +1,9 @@
 {
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "developmentVersion": "0.41.9-dev",
-  "buildIdentifier": "23200945-local-tablejoin",
+  "developmentVersion": "0.41.10-dev",
+  "buildIdentifier": "23200945-local-tablejoin-polish",
   "uncommittedChanges": true,
-  "sourceInputManifestSha256": "f2e33b3ef5e6d66b9cc0725011d50e10bfd2713156e58c44bda465b13727997f",
-  "builtAtUtc": "2026-10-07T03:21:31.1513841Z",
-  "purpose": "focused dining table joining polish candidate"
+  "sourceInputManifestSha256": "5ff7fdcabbaf865665559b2841d8be8db8a4b3ca2569d59d33515be04afebe1a",
+  "builtAtUtc": "2026-10-07T04:20:56.3576937Z",
+  "purpose": "completed dining table joining controls candidate"
 }

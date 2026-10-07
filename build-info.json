@@ -1,9 +1,9 @@
 {
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "developmentVersion": "0.41.8-dev",
-  "buildIdentifier": "23200945-local-appliance",
+  "developmentVersion": "0.41.9-dev",
+  "buildIdentifier": "23200945-local-tablejoin",
   "uncommittedChanges": true,
-  "sourceInputManifestSha256": "0bc2e624696cfc0c3ea01aea7141a8a190377e56232fd02869742602185b8dcf",
-  "builtAtUtc": "2026-10-06T06:54:05.6338292Z",
-  "purpose": "local appliance cooperation and serving counter candidate"
+  "sourceInputManifestSha256": "f2e33b3ef5e6d66b9cc0725011d50e10bfd2713156e58c44bda465b13727997f",
+  "builtAtUtc": "2026-10-07T03:21:31.1513841Z",
+  "purpose": "focused dining table joining polish candidate"
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "totalBytes": 127698936,
+  "totalBytes": 127717545,
   "files": [
     {
       "path": ".nojekyll",
@@ -10,33 +10,33 @@
     },
     {
       "path": "build-info.json",
-      "bytes": 402,
-      "sha256": "aff572a719ff8af4319364493bc4fa9feaa009c6ba76ee98df78360fe4e1986c"
+      "bytes": 390,
+      "sha256": "071e04981ccab715dd318c87ed1e327a4aa5698a90b85c932223712e68bcdcb8"
     },
     {
-      "path": "Build/Web-appliance-floor-production.data",
-      "bytes": 39056214,
-      "sha256": "8698ee7dd008a79cce1829a063d4a3ec39ddd5da6334b3908ab68a210daa3955"
+      "path": "Build/Web-deploy-current-production.data",
+      "bytes": 39061876,
+      "sha256": "bf4178fa9895a9b4732a4f6abee4ecf450164dbbe6d43c87025359d1b4c9bb6b"
     },
     {
-      "path": "Build/Web-appliance-floor-production.framework.js",
+      "path": "Build/Web-deploy-current-production.framework.js",
       "bytes": 336117,
       "sha256": "c8af70e704a7f69d4ddeacaa7ca62a9ff7589011abf244d79dc159891979d8c3"
     },
     {
-      "path": "Build/Web-appliance-floor-production.loader.js",
+      "path": "Build/Web-deploy-current-production.loader.js",
       "bytes": 20263,
-      "sha256": "49574f1d5c4896ce0c1becb725363dfbe59970411e6e316a6af9b5d5255938f2"
+      "sha256": "528428c85e61a376bca2654099c550b2955a1f21b807fc306ba52305424eb6f8"
     },
     {
-      "path": "Build/Web-appliance-floor-production.wasm",
-      "bytes": 37007122,
-      "sha256": "c3fef54c95b0a4daa6751e83fca895e70081b1859252ae67a123333c0220d659"
+      "path": "Build/Web-deploy-current-production.wasm",
+      "bytes": 37020085,
+      "sha256": "cbe8cd8f4dc284ae99b2f4f66c2b579e1606650a37099fde8fb28946ce19ab57"
     },
     {
       "path": "index.html",
-      "bytes": 5840,
-      "sha256": "8947225787cdc7b3b29a50d886fea83239e224624aa244396c3dda36e7b9bdbe"
+      "bytes": 5836,
+      "sha256": "b90cb3e5a96346f0725721f3e1826376d7128f9f1c21f45fa0ca283e75e78365"
     },
     {
       "path": "StreamingAssets/Music/after-the-rush.ogg",

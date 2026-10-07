@@ -1,9 +1,9 @@
 {
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "developmentVersion": "0.41.10-dev",
-  "buildIdentifier": "23200945-local-tablejoin-polish",
+  "developmentVersion": "0.41.11-dev",
+  "buildIdentifier": "23200945-local-dock-boundary",
   "uncommittedChanges": true,
-  "sourceInputManifestSha256": "5ff7fdcabbaf865665559b2841d8be8db8a4b3ca2569d59d33515be04afebe1a",
-  "builtAtUtc": "2026-10-07T04:20:56.3576937Z",
-  "purpose": "completed dining table joining controls candidate"
+  "sourceInputManifestSha256": "8aa3bc2b06f6c08a6eac06007a14b314b36230061d47026ed93ddbc3ea15b7b0",
+  "builtAtUtc": "2026-10-07T05:37:28.2071839Z",
+  "purpose": "expanded exterior dock boundary correction"
 }

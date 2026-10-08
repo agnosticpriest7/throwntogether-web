@@ -1,9 +1,9 @@
 {
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "developmentVersion": "0.41.11-dev",
-  "buildIdentifier": "23200945-local-dock-boundary",
+  "developmentVersion": "0.41.12-dev",
+  "buildIdentifier": "23200945-local-audio-operations",
   "uncommittedChanges": true,
-  "sourceInputManifestSha256": "8aa3bc2b06f6c08a6eac06007a14b314b36230061d47026ed93ddbc3ea15b7b0",
-  "builtAtUtc": "2026-10-07T05:37:28.2071839Z",
-  "purpose": "expanded exterior dock boundary correction"
+  "sourceInputManifestSha256": "924cce1055cee2e1ca910288b5f657043900dcff8a507a84f9c64f3d6051e88e",
+  "builtAtUtc": "2026-10-08T20:09:27.2438276Z",
+  "purpose": "distinct operational audio and successful customer handoff"
 }

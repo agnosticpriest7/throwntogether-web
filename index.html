@@ -69,9 +69,9 @@
       helper.onload=()=>{
         shell=ThrownTogetherWeb.attach(window,document);
         const config={
-          dataUrl:"Build/Web-dock-production.data"+version,
-          frameworkUrl:"Build/Web-dock-production.framework.js"+version,
-          codeUrl:"Build/Web-dock-production.wasm"+version,
+          dataUrl:"Build/Web-audio-production.data"+version,
+          frameworkUrl:"Build/Web-audio-production.framework.js"+version,
+          codeUrl:"Build/Web-audio-production.wasm"+version,
           streamingAssetsUrl:"StreamingAssets",
           companyName:"DefaultCompany",
           productName:"ThrownTogetherUnity",
@@ -83,7 +83,7 @@
           showBanner:(message,type)=>{ if(type==="error")reportFatal(message);else console.warn(message); }
         };
         const loader=document.createElement("script");
-        loader.src="Build/Web-dock-production.loader.js"+version;
+        loader.src="Build/Web-audio-production.loader.js"+version;
         loader.onerror=()=>reportFatal("Unity loader could not download","network");
         loader.onload=()=>{
           try {createUnityInstance(canvas,config,p=>{if(!failed)loading.textContent="Loading Unity… "+Math.round(p*100)+"%";})

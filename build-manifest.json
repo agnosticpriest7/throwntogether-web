@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "totalBytes": 128089539,
+  "totalBytes": 128173696,
   "files": [
     {
       "path": ".nojekyll",
@@ -10,33 +10,33 @@
     },
     {
       "path": "build-info.json",
-      "bytes": 411,
-      "sha256": "825b6513338ad6d6e28d885eed0485ed836503b99e3ec2413139d5b309c06a87"
+      "bytes": 369,
+      "sha256": "2fd90d6c6f2da1b0bd04d09da854344feab0667b4f58de41d5ac44a70065d427"
     },
     {
-      "path": "Build/Web-audio-production.data",
-      "bytes": 39362552,
-      "sha256": "e53c49d00616d207e3ac93b1a096c390300424ff929b6719b908dca749e0e8c0"
+      "path": "Build/Web-release-local-final.data",
+      "bytes": 39369992,
+      "sha256": "7d86f770a4697f4a451e457a4601a124a5dfde258972ac55584a58ed55034047"
     },
     {
-      "path": "Build/Web-audio-production.framework.js",
+      "path": "Build/Web-release-local-final.framework.js",
       "bytes": 336117,
       "sha256": "c8af70e704a7f69d4ddeacaa7ca62a9ff7589011abf244d79dc159891979d8c3"
     },
     {
-      "path": "Build/Web-audio-production.loader.js",
+      "path": "Build/Web-release-local-final.loader.js",
       "bytes": 20263,
-      "sha256": "92d7fb13d39e754ff46f334dd405e2be4915f1455e4654eb3a8e613f65e06c3e"
+      "sha256": "7159311c91084688e595628d1304384b697c6db676db842e98efbd8e79120c7e"
     },
     {
-      "path": "Build/Web-audio-production.wasm",
-      "bytes": 37091418,
-      "sha256": "f7e128a18fa98b1bb2dad77c1925bc0484c360d07df358f299ee63e6d08cd9c4"
+      "path": "Build/Web-release-local-final.wasm",
+      "bytes": 37168165,
+      "sha256": "9475c1b36f854fcf8a72bad6817ca7aa17e805f797b418f27bb72399aa3ea521"
     },
     {
       "path": "index.html",
-      "bytes": 5800,
-      "sha256": "e38a7dadb4b2e8501d70c0fafe6cc85efc03d1b675c5cc1bd644b0b6a1810258"
+      "bytes": 5812,
+      "sha256": "d10a811494906dde1fffdfd9612928e1483d42eab9c1ef29fb8b33f83ec95f1b"
     },
     {
       "path": "StreamingAssets/Music/after-the-rush.ogg",

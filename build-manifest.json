@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "totalBytes": 128173696,
+  "totalBytes": 128216162,
   "files": [
     {
       "path": ".nojekyll",
@@ -10,13 +10,13 @@
     },
     {
       "path": "build-info.json",
-      "bytes": 369,
-      "sha256": "2fd90d6c6f2da1b0bd04d09da854344feab0667b4f58de41d5ac44a70065d427"
+      "bytes": 367,
+      "sha256": "f887784f6fa5fa8ab23d30ea6b2ff13a6c21550a44aa9c9fadcff721a4f08db4"
     },
     {
       "path": "Build/Web-release-local-final.data",
-      "bytes": 39369992,
-      "sha256": "7d86f770a4697f4a451e457a4601a124a5dfde258972ac55584a58ed55034047"
+      "bytes": 39373172,
+      "sha256": "8a726530de7a3ded355686c1f692914ed8bcfbc55230d9b55810436fa3759d41"
     },
     {
       "path": "Build/Web-release-local-final.framework.js",
@@ -26,12 +26,12 @@
     {
       "path": "Build/Web-release-local-final.loader.js",
       "bytes": 20263,
-      "sha256": "7159311c91084688e595628d1304384b697c6db676db842e98efbd8e79120c7e"
+      "sha256": "83b0e49cae8927df750a1484b7b1233bfd98b483f1a6bba4f898598f8663031b"
     },
     {
       "path": "Build/Web-release-local-final.wasm",
-      "bytes": 37168165,
-      "sha256": "9475c1b36f854fcf8a72bad6817ca7aa17e805f797b418f27bb72399aa3ea521"
+      "bytes": 37207453,
+      "sha256": "40452e4db4254cdaabf5ec1e4146665e3a4e88044eb7d19300852a6cb4a923ae"
     },
     {
       "path": "index.html",

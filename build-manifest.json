@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceCommit": "23200945efc8fce09ee5d531654d8654f59dba82",
-  "totalBytes": 128216162,
+  "totalBytes": 128232425,
   "files": [
     {
       "path": ".nojekyll",
@@ -10,33 +10,33 @@
     },
     {
       "path": "build-info.json",
-      "bytes": 367,
-      "sha256": "f887784f6fa5fa8ab23d30ea6b2ff13a6c21550a44aa9c9fadcff721a4f08db4"
+      "bytes": 583,
+      "sha256": "cc8f774d78fcd6f2d1a7d3eb3bce421ec883a8ab0a6112429e3e5ffd738652ba"
     },
     {
-      "path": "Build/Web-release-local-final.data",
-      "bytes": 39373172,
-      "sha256": "8a726530de7a3ded355686c1f692914ed8bcfbc55230d9b55810436fa3759d41"
+      "path": "Build/Web.data",
+      "bytes": 39378220,
+      "sha256": "89c9a83fe28bfc8ed9a72019a740bf86ef579f831dc37c8c3d2d7e003969e94a"
     },
     {
-      "path": "Build/Web-release-local-final.framework.js",
-      "bytes": 336117,
-      "sha256": "c8af70e704a7f69d4ddeacaa7ca62a9ff7589011abf244d79dc159891979d8c3"
+      "path": "Build/Web.framework.js",
+      "bytes": 336916,
+      "sha256": "cd2c647451923d5900644f049688b29a20f8e713607bbfe44604802022620883"
     },
     {
-      "path": "Build/Web-release-local-final.loader.js",
+      "path": "Build/Web.loader.js",
       "bytes": 20263,
-      "sha256": "83b0e49cae8927df750a1484b7b1233bfd98b483f1a6bba4f898598f8663031b"
+      "sha256": "2e9ca2f5a527cd154522c1aedc53c23a5a2933b80cd603f3df44b1c7e50fd6e9"
     },
     {
-      "path": "Build/Web-release-local-final.wasm",
-      "bytes": 37207453,
-      "sha256": "40452e4db4254cdaabf5ec1e4146665e3a4e88044eb7d19300852a6cb4a923ae"
+      "path": "Build/Web.wasm",
+      "bytes": 37217733,
+      "sha256": "6010e9d783edabf131cfadf202de1ae20d9de9f184f88a084ee7883933080b40"
     },
     {
       "path": "index.html",
-      "bytes": 5812,
-      "sha256": "d10a811494906dde1fffdfd9612928e1483d42eab9c1ef29fb8b33f83ec95f1b"
+      "bytes": 5732,
+      "sha256": "3529eee5f63b33fd7ec254f86f414627201f8263af5dba86ef3ad4876ed5e84d"
     },
     {
       "path": "StreamingAssets/Music/after-the-rush.ogg",
